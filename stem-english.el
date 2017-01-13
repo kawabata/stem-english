@@ -976,8 +976,8 @@ Porter のアルゴリズムに基づいて派生語を処理する関数"
 
 (provide 'stem-english)
 
-;;; stem-english.el ends here
-
 ;; Local Variables:
 ;; time-stamp-pattern: "10/Version:\\\\?[ \t]+2.%02y%02m%02d\\\\?\n"
 ;; End:
+
+;;; stem-english.el ends here
