@@ -956,6 +956,13 @@
   (sort (stem-english--stripping-suffix str)
 	(lambda (a b) (< (length a) (length b)))))
 
+(defun stem-english-smart (word)
+    "My smart apply of `stem-english'."
+    (let ((stem-word (stem-english word)))
+      (if (= 1 (length stem-word))
+          word
+        (nth 1 stem-word))))
+
 ;; この stem-english の動作は、
 ;;
 ;;     Id: stem.el,v 1.4 1998/11/30 09:27:27 tsuchiya Exp tsuchiya
